@@ -129,6 +129,7 @@ class DungeonFactoryTest {
         assertEquals(TrapType.ELECTRIC, trap.getType());
         assertEquals(8, trap.getDamage());
         assertTrue(trap.isArmed());
+        assertTrue(trap.isOneTimeTrigger());
 
         // Items per room
         assertEquals(1, lectureHall.getItems().size());
